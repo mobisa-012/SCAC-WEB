@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     /* font-family:  */
 }
 .header {
     /* min-height: 100vh; */
     width: 100%;    
     background-position: center;
-    background: url("static/images/meeting.jpg");
+ 
     background-size: cover;
     position: relative;
     margin-bottom: 20px;
@@ -18,12 +21,13 @@
     gap: var(--gap, 1rem);    
     }
 .logo{
+    height: auto;
     margin: .5rem;
 }
 .primary-header{
     align-items: center;
     justify-content: space-between;
-    background:green;
+    background:white;
 }
 .mobile-nav-toggle{
     display: none;
@@ -40,20 +44,20 @@
 }
 .primary-navigation a:hover{
     text-decoration: none;
-    color: yellow;
+    /* color: yellow; */
 }
 .primary-navigation a > [aria-hidden="true"]{
     font-size: 700;
     margin-inline-end: 0.75em;
 }
 li:last-child{
-    background: yellow;
+    /* background: yellow; */
     border-radius: 10rem;
 padding-inline: 1rem;
 }
 .primary-navigation a.active{
     text-decoration: underline;
-    color: yellow;
+    /* color: yellow; */
 }
 .black{
     color: black;
@@ -62,22 +66,10 @@ padding-inline: 1rem;
 h1{
     font-size: xx-large;
 }
-.makeCenter{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-inline: 1rem;
-}
-.primaryBtn{
-        outline: transparent;
-        border-radius: 25px;
-        margin-block: 1rem;
-        padding: 0.3rem;
-}
-
 .carousel-item{
     height: 400px;
     width: 100%;
+    
 } 
 .carousel-item img{
     height: 400px;
@@ -140,7 +132,7 @@ h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -189,7 +181,7 @@ h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 40px; */
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -238,7 +230,7 @@ background: rgba(102, 219, 184, 0.514);
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 .terms-col{
     flex-basis: 31%;
@@ -265,7 +257,7 @@ background: rgba(102, 219, 184, 0.514);
     text-align: center;
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 .comments-col{
     flex-basis: 30%;
@@ -303,21 +295,6 @@ background: rgba(102, 219, 184, 0.514);
         margin-right: 15px;      
     }
 }
-
-
- callToAction 
-
-
- .callToAction{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(243, 27, 27, 0.7), rgba(0, 0, 0, 0.7));
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
- }
  
 @media (max-width:35em) {
     .primary-navigation{
@@ -346,7 +323,7 @@ background: rgba(102, 219, 184, 0.514);
         top: 1.5rem;
         right: 2rem;
         background: url('/static/images/menu.svg');
-        width: 2rem;
+        width: 1.5rem;
         background-repeat: no-repeat;
         border: none;
         aspect-ratio: 1;
@@ -383,3 +360,141 @@ display: none;
     
 }
 
+ /* callToAction  */
+ .callToAction{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/static/images/meeting.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 90px ;
+ }
+ .callToAction h1{
+    color: white;
+ }
+ .primaryBtn{
+background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+ }
+
+ /* content */
+ .content{
+    width: 85%;
+    margin:auto;
+    padding: 80px 0;
+    background-position: center;
+    background-size: cover;
+    text-align: center;    
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.836),rgba(0,0,0,0.7)),url('/static/images/nairobi.jpg');
+ }
+ .content h1{
+    color: white;
+    font-weight: 600;
+ }
+ .content p{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+ }
+
+ /* footer */
+ .container{
+    
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .footer{
+    /* margin: 100px auto;
+    width: 80%; */
+    background-color: #e76763;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-radius: 10px;
+ }
+ ul{
+    list-style: none;
+ }
+ .footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+ .footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+   font-weight: 500;
+   position: relative;
+ }
+ .footer-col h4 ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;    
+ }
+ .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+ }
+ .footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+ }
+ .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+ }
+ .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+ }
+
+ /* responsive */
+ @media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+ }
+ @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+ }
